@@ -1,16 +1,28 @@
 @import "./layout/navbar.css";
 @import "./layout/hero.css";
 
-:root {
-    --color-w: #FEFEFE;
-    --color-b: #355592;
-    --color-y: #F39C12;
-    --color-lb: #F1F8FF;
-}
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --color-w: #FEFEFE;
+    --color-b: #355592;
+    --color-y: #F39C12;
+    --color-lb: #F1F8FF;
+    --color-g: #4E4E4E;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+    .container{
+        width: 95%;
+    }
 }

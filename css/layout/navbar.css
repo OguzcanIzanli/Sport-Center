@@ -4,6 +4,7 @@
     align-items: center;
     position: fixed;
     width: 60%;
+    color: var(--color-w);
 }
 
 .pageLogo {

@@ -5,15 +5,9 @@
     background-size: cover;
 }
 
-.heroContainer {
-    width: 60%;
-    margin: 0 auto;
-    color: var(--color-w);
-    position: relative;
-}
-
 .hero {
-    padding: 12rem 0 5rem 0;
+    padding: 14rem 0 5rem 0;
+    color: var(--color-w);
 }
 
 .hero h1 {
@@ -104,10 +98,6 @@
 
 
 @media (max-width: 576px) {
-    .heroContainer{
-        width: 95%;
-    }
-
     .hero h2 {
         font-size: 4rem;
         line-height: 4.5rem;
@@ -129,7 +119,7 @@
         font-weight: 700;
     }
 
-    /* STATISTICS - MEDIA  */
+    /* STATISTICS  */
     .statistics {
         width: 80%;
         flex-wrap: wrap;
