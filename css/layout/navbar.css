@@ -1,3 +1,4 @@
+/* Navbar  */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -7,15 +8,15 @@
     color: var(--color-w);
     border-radius: 10px;
     transition: all 0.3s linear;
-    padding: 0 0.8rem;
-    z-index: 2;
+    padding: 0 8px;
+    z-index: 1;
+    height: 70px;
 }
 
+/* Navbar Buttons  */
 .navbarBtns a {
-    color: var(--color-w);
-    font-size: 1.3rem;
-    font-weight: 700;
-    transition: all 0.3s;
+    font-size: var(--fs-0);
+    font-weight: var(--fw-700);
 }
 
 .navbarBtns a:not(:last-child) {
@@ -24,7 +25,7 @@
 
 .navbarBtns a:last-child {
     background-color: var(--color-y);
-    padding: 5px 8px;
+    padding: 6px 9px;
     border: 2px solid var(--color-y);
 }
 
@@ -38,19 +39,21 @@
     color: var(--color-y);
 }
 
+/* Dropdown Menu Button */
 .navbarMenuBtn {
-    font-size: 4rem;
+    font-size: var(--fs-4);
     margin-right: 2rem;
     display: none;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1460px) {
+    /* Navbar Buttons */
     .navbarBtns {
         position: absolute;
         display: flex;
         flex-direction: column;
         width: 40%;
-        top: 95px;
+        top: 72px;
         right: 0;
         background-color: rgba(0,0,0,0.8);
         transition: all 0.3s linear;
@@ -60,15 +63,21 @@
     }
 
     .navbarOpen {
-        height: 385px;
+        height: 385px; /* Dropdown Menu Height */
     }
 
     .navbarBtns a {
-        font-size: 2rem;
+        font-size: var(--fs-2);
         margin: 0.4rem 1.4rem;
     }
 
     .navbarMenuBtn {
         display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        width: 95%;
     }
 }

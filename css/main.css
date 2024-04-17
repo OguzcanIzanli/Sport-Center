@@ -1,6 +1,7 @@
 @import "./layout/navbar.css";
 @import "./layout/hero.css";
 @import "./layout/classes.css";
+@import "./layout/calculator.css";
 
 * {
     padding: 0;
@@ -12,6 +13,30 @@
 a {
     text-decoration: none;
     border-radius: 5px;
+    color: var(--color-w);
+    transition: all 0.3s linear;
+}
+
+h1 {
+    color: var(--color-b);
+    font-size: var(--fs-2);
+    font-weight: var(--fw-800);
+    padding: 15px 0;
+}
+
+p {
+    font-weight: var(--fw-600);
+    color: var(--color-g);
+    padding: 10px 0;
+}
+
+.line {
+    padding: 4px;
+    background-color: var(--color-y);
+    border-radius: 20px;
+    display: inline-block;
+    width: 7%;
+    margin-bottom: 5px;
 }
 
 :root {
@@ -20,6 +45,15 @@ a {
     --color-y: #F39C12;
     --color-lb: #F1F8FF;
     --color-g: #4E4E4E;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+    --fs-0: 1.3rem;
+    --fs-1: 1.6rem;
+    --fs-2: 2rem;
+    --fs-3: 3rem;
+    --fs-4: 4rem;
+    --fs-6: 6rem;
 }
 
 .container {

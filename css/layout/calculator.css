@@ -1,0 +1,50 @@
+.bmiContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.calculator {
+    width: 45%;
+}
+
+.calculatorInputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.calculatorInputs input{
+    width: 35%;
+    padding: 1px 3px;
+}
+
+.calculatorResult {
+    width: 45%;
+    text-align: center;
+}
+
+.required {
+    display: block;
+    height: 51px;
+    text-align: center;
+    padding: 10px 0;
+    color: brown;
+    font-weight: var(--fw-600);
+    font-size: 1rem;
+}
+
+.calculatorResult image {
+    position: relative;
+}
+
+.calculatorResult img {
+    width: 100%;
+}
+
+.calculatorResult p {
+    font-size: var(--fs-1);
+    padding: 15px 0;
+}

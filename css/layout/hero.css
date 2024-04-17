@@ -1,3 +1,4 @@
+/* Hero Background Image */
 .heroImage {
     background-image: url("../../images/hero-man.jpg");
     background-position: center;
@@ -6,23 +7,24 @@
 }
 
 .hero {
-    padding: 14rem 0 5rem 0;
+    padding: 220px 0 80px 0;
     color: var(--color-w);
 }
 
 .hero h1 {
     background-color: var(--color-b);
+    color: var(--color-w);
     display: inline-block;
     padding: 5px 16px;
-    font-size: 1.6rem;
+    font-size: var(--fs-1);
     border-radius: 5px;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
 }
 
 .hero h2 {
-    font-size: 6rem;
+    font-size: var(--fs-6);
     line-height: 7.5rem;
-    margin: 0.5rem 0;
+    margin: 8px 0;
 }
 
 .hero h2 span {
@@ -31,13 +33,12 @@
 
 .hero p {
     background-color: rgba(0,0,0,0.5);
+    color: var(--color-w);
     font-size: 1.8rem;
-    padding: 0.5rem 1.4rem;
-    font-weight: 600;
+    padding: 8px 18px;
 }
 
-
-/* BUTTONS  */
+/* Hero - Buttons */
 .heroBtns {
     display: flex;
     align-items: center;
@@ -45,12 +46,10 @@
 }
 
 .heroBtns a {
-    color: var(--color-w);
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding: 0.6rem 2rem;
-    margin: 0.5rem 1.5rem;
-    transition: all 0.3s;
+    font-size: var(--fs-1);
+    font-weight: var(--fw-600);
+    padding: 8px 30px;
+    margin: 8px 24px;
 }
 
 .heroBtns a:first-child {
@@ -58,57 +57,53 @@
     border: 2px solid var(--color-b);
 }
 
-.heroBtns a:first-child:hover {
-    background-color: rgba(0,0,0,0.8);
-    scale: 0.95;
-}
-
 .heroBtns a:last-child {
     border: 2px solid var(--color-w);
     background-color: rgba(0,0,0,0.5);
 }
 
-.heroBtns a:last-child:hover {
+.heroBtns a:hover {
     background-color: rgba(0,0,0,0.8);
     scale: 0.95;
 }
 
-/* STATISTICS  */
+/* Hero - Statictics  */
+/* Hero Statistics Background */
 .heroStatistics {
     background-color: var(--color-lb);
 }
 
-.statistics {
+.statisticsContainer {
     width: 60%;
-    margin: 0rem auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0;
+    padding: 30px 0;
 }
 
 .statistic {
     background-color: var(--color-w);
     text-align: center;
     width: 23%;
-    margin: 1.5rem 0;
-    font-size: 1.5rem;
-    font-weight: 800;
+    margin: 25px 0;
+    font-size: var(--fs-0);
+    font-weight: var(--fw-800);
 }
 
 .statistic .number {
     color: var(--color-b);
-    padding: 1.2rem 0;
+    padding: 20px 0;
     display: inline-block;
 }
 
 .statistic p {
-    padding-bottom: 1.2rem;
+    padding-bottom: 20px;
 }
 
 
 @media (max-width: 576px) {
     .hero h2 {
-        font-size: 4rem;
+        font-size: var(--fs-4);
         line-height: 4.5rem;
     }
 
@@ -116,26 +111,26 @@
         display: inline;
     }
 
-    /* BUTTONS */
+    /* Hero - Buttons */
     .heroBtns {
         flex-direction: column;
     }
 
     .heroBtns a {
         width: 100%;
-        padding: 0.8rem 2rem;
-        font-size: 2rem;
-        font-weight: 700;
+        padding: 12px 30px;
+        font-size: var(--fs-2);
+        font-weight: var(--fw-700);
     }
 
-    /* STATISTICS  */
-    .statistics {
+    /* Hero - Statistics */
+    .statisticsContainer {
         width: 80%;
         flex-wrap: wrap;
     }
 
     .statistic {
         width: 100%;
-        font-size: 2rem;
+        font-size: var(--fs-2);
     }
 }
