@@ -5,27 +5,37 @@
     position: fixed;
     width: 60%;
     color: var(--color-w);
-}
-
-.pageLogo {
-    display: flex;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    padding: 0 0.8rem;
+    z-index: 2;
 }
 
 .navbarBtns a {
     color: var(--color-w);
-    text-decoration: none;
     font-size: 1.3rem;
     font-weight: 700;
+    transition: all 0.3s;
 }
 
 .navbarBtns a:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 1vw;
 }
 
 .navbarBtns a:last-child {
     background-color: var(--color-y);
-    border-radius: 5px;
     padding: 5px 8px;
+    border: 2px solid var(--color-y);
+}
+
+.navbarBtns a:not(:last-child):hover {
+    opacity: 0.6;
+    text-shadow: 2px 2px 2px rgba(0,0,0,1);
+}
+
+.navbar a:last-child:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: var(--color-y);
 }
 
 .navbarMenuBtn {
@@ -34,21 +44,19 @@
     display: none;
 }
 
-@media (max-width: 576px) {
-    .navbar {
-        width: 95%;
-    }
-
+@media (max-width: 1400px) {
     .navbarBtns {
         position: absolute;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 40%;
         top: 95px;
+        right: 0;
         background-color: rgba(0,0,0,0.8);
         transition: all 0.3s linear;
         height: 0;
         overflow: hidden;
+        border-radius: 10px;
     }
 
     .navbarOpen {

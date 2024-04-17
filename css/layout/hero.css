@@ -46,22 +46,31 @@
 
 .heroBtns a {
     color: var(--color-w);
-    text-decoration: none;
     font-size: 1.5rem;
     font-weight: 600;
     padding: 0.6rem 2rem;
     margin: 0.5rem 1.5rem;
+    transition: all 0.3s;
 }
 
 .heroBtns a:first-child {
     background-color: var(--color-b);
-    border-radius: 5px;
+    border: 2px solid var(--color-b);
+}
+
+.heroBtns a:first-child:hover {
+    background-color: rgba(0,0,0,0.8);
+    scale: 0.95;
 }
 
 .heroBtns a:last-child {
     border: 2px solid var(--color-w);
-    border-radius: 5px;
     background-color: rgba(0,0,0,0.5);
+}
+
+.heroBtns a:last-child:hover {
+    background-color: rgba(0,0,0,0.8);
+    scale: 0.95;
 }
 
 /* STATISTICS  */

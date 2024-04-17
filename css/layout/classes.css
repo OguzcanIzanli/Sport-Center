@@ -1,0 +1,101 @@
+.classesImage {
+    position: absolute;
+    background-color: #F6F6F6;
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 10% 100%);
+    right: -33.3%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#classes {
+    text-align: center;
+    color: var(--color-g);
+}
+
+#classes h1 {
+    color: var(--color-b);
+    padding-top: 3rem;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+#classes .line {
+    padding: 3.5px;
+    background-color: var(--color-y);
+    border-radius: 20px;
+    display: inline-block;
+    width: 8%;
+}
+
+.ourClassesP {
+    font-weight: 600;
+    padding: 1.5rem 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.classesBtns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.classesBtn {
+    color: var(--color-w);
+    background-color: var(--color-b);
+    padding: 0.5rem 1.2rem;
+    transition: all 0.3s;
+    font-size: 1.3rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.classesBtn:hover {
+    background-color: var(--color-y);
+}
+
+.caret {
+    position: absolute;
+    bottom: -2.4rem;
+    font-size: 3rem;
+    left: 50%;
+    color: var(--color-y);
+    transform: translate(-50%, 0);
+    z-index: -1;
+}
+
+.selected {
+    box-shadow: 0px 0px 10px 1px var(--color-y);
+    background-color: var(--color-y);
+}
+
+.classes {
+    display: none;
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.classes img {
+    width: 45%;
+    height: min-content;
+    padding: 4rem 0 0 0;
+}
+
+.information {
+    width: 45%;
+    text-align: left;
+}
+
+.information h2 {
+    padding-top: 1rem;
+}
+
+.information p {
+    font-weight: 600;
+    padding: 0.5rem 0;
+}
