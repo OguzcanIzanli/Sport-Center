@@ -1,15 +1,15 @@
 // NAVBAR - START
-const navbarMenuBtn = document.querySelector(".navbarMenuBtn"); // Navbar Dropdown Menu Button
-const navbarMenuBtnIcon = document.querySelector(".navbarMenuBtn i"); // Dropdown Menu Button Icon
+const navbarDropdownBtn = document.querySelector(".navbarDropdownBtn"); // Navbar Dropdown Menu Button
+const navbarDropdownBtnIcon = document.querySelector(".navbarDropdownBtn i"); // Dropdown Menu Button Icon
 const navbarButtons = document.querySelector(".navbarBtns"); // Navbar Buttons
-const navbar = document.querySelector(".navbar"); // Navbar
+const header = document.querySelector("header"); // Header
 
 // Navbar Dropdown Menu Actions
-navbarMenuBtn.addEventListener("click", () => {
+navbarDropdownBtn.addEventListener("click", () => {
     navbarButtons.classList.toggle("navbarOpen");
     const isOpen = navbarButtons.classList.contains("navbarOpen");
 
-    navbarMenuBtnIcon.classList = isOpen
+    navbarDropdownBtnIcon.classList = isOpen
         ? "fa-solid fa-xmark"
         : "fa-solid fa-bars";
 });
@@ -17,8 +17,8 @@ navbarMenuBtn.addEventListener("click", () => {
 // Navbar Page Scroll Event
 document.addEventListener("scroll", () => {
     window.scrollY > 100
-        ? (navbar.style.backgroundColor = "#355592")
-        : (navbar.style.backgroundColor = "");
+        ? (header.style.backgroundColor = "#355592")
+        : (header.style.backgroundColor = "");
 });
 // NAVBAR - END
 

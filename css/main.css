@@ -8,11 +8,29 @@
 @import "./layout/contact.css";
 @import "./layout/footer.css";
 
+:root {
+    --color-w: #FEFEFE;
+    --color-b: #355592;
+    --color-y: #F39C12;
+    --color-lb: #F1F8FF;
+    --color-g: #4E4E4E;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+    --fs-0: 1.3rem;
+    --fs-1: 1.6rem;
+    --fs-2: 2rem;
+    --fs-3: 3rem;
+    --fs-4: 4rem;
+    --fs-6: 6rem;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    color: var(--color-w);
 }
 
 a {
@@ -44,22 +62,7 @@ p {
     margin-bottom: 5px;
 }
 
-:root {
-    --color-w: #FEFEFE;
-    --color-b: #355592;
-    --color-y: #F39C12;
-    --color-lb: #F1F8FF;
-    --color-g: #4E4E4E;
-    --fw-600: 600;
-    --fw-700: 700;
-    --fw-800: 800;
-    --fs-0: 1.3rem;
-    --fs-1: 1.6rem;
-    --fs-2: 2rem;
-    --fs-3: 3rem;
-    --fs-4: 4rem;
-    --fs-6: 6rem;
-}
+
 
 .container {
     width: 60%;
