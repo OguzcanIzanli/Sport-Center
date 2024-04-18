@@ -37,7 +37,8 @@
 .classesBtn {
     color: var(--color-w);
     background-color: var(--color-b);
-    padding: 8px 18px;
+    padding: 8px 25px;
+    margin-bottom: 16px;
     font-size: var(--fs-0);
     font-weight: var(--fw-700);
     position: relative;
@@ -92,9 +93,22 @@
         align-items: center;
     }
 
+    #classes p {
+        font-size: var(--fs-1)
+    }
+
+    #classes h2 {
+        font-size: var(--fs-2);
+    }
+
     .classes img {
         width: 110%;
     }
+
+.classesBtn {
+    font-size: var(--fs-2);
+}
+
 
     .information {
         width: 95%;

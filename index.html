@@ -199,22 +199,25 @@
                         itaque sint. Earum, dolor iure! Delectus, libero. Non.
                     </p>
                     <div class="calculatorInputs">
-                        <input
-                            type="number"
-                            name=""
-                            id="height"
-                            placeholder="Your Height"
-                            onchange="calculator(event)"
-                        />
-                        <label for="height">cm</label>
-                        <input
-                            type="number"
-                            name=""
-                            id="weight"
-                            placeholder="Your Weight"
-                            onchange="calculator(event)"
-                        />
-                        <label for="weight">kg</label>
+                        <div class="inputContainer">
+                            <input
+                                type="number"
+                                name=""
+                                id="height"
+                                placeholder="Your Height"
+                            />
+                            <label for="height">cm</label>
+                        </div>
+
+                        <div class="inputContainer">
+                            <input
+                                type="number"
+                                name=""
+                                id="weight"
+                                placeholder="Your Weight"
+                            />
+                            <label for="weight">kg</label>
+                        </div>
                     </div>
                     <span class="required"></span>
                 </div>
@@ -222,11 +225,182 @@
                     <p>Your BMI</p>
                     <div class="image">
                         <img src="./images/bmi-index.jpg" alt="BMI Index" />
+                        <span class="calculatorCaret">
+                            <i class="fa-solid fa-caret-up"></i>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
         <!-- BMI Calculator - End  -->
+
+        <!-- Trainers - Start  -->
+        <div class="trainersContainer">
+            <div class="container">
+                <h1>OUR BEST TRAINERS</h1>
+                <span class="line"></span>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Suscipit ex corporis tempore consectetur provident earum
+                    voluptatibus vero ullam. Ut, sit!
+                </p>
+
+                <div class="trainerCards">
+                    <div class="trainerCard">
+                        <img src="./images/trainer1.jpg" alt="" />
+                        <div class="cardClip"></div>
+                        <div class="trainerName">
+                            <h2>Jane Doe</h2>
+                            <h4>Cardio Trainer</h4>
+                        </div>
+                    </div>
+                    <div class="trainerCard">
+                        <img src="./images/trainer2.jpg" alt="" />
+                        <div class="cardClip"></div>
+                        <div class="trainerName">
+                            <h2>Jane Doe</h2>
+                            <h4>Cardio Trainer</h4>
+                        </div>
+                    </div>
+                    <div class="trainerCard">
+                        <img src="./images/trainer3.jpg" alt="" />
+                        <div class="cardClip"></div>
+                        <div class="trainerName">
+                            <h2>Jane Doe</h2>
+                            <h4>Cardio Trainer</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Trainers - End  -->
+
+        <!-- Purchase - Start  -->
+        <div id="purchase" class="container">
+            <h1>PURCHASE FROM US</h1>
+            <span class="line"></span>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Doloribus, magni fugiat ex suscipit necessitatibus sint.
+            </p>
+            <div class="purchaseContainer">
+                <div class="purchaseCard">
+                    <img src="./images/purchase1.jpg" alt="Kettlebell / 5 kg" />
+                    <h1 class="purchaseItemName">Kettlebell / 5 kg</h1>
+                    <h2 class="purchaseItemPrice">
+                        <span>89,99</span>$ / 59,99$
+                    </h2>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="purchaseCard">
+                    <img src="./images/purchase2.jpg" alt="Treadmill" />
+                    <h1 class="purchaseItemName">Treadmill</h1>
+                    <h2 class="purchaseItemPrice">
+                        <span>899,99</span>$ / 599,99$
+                    </h2>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="purchaseCard">
+                    <img
+                        src="./images/purchase3.jpg"
+                        alt="Adjustable Dumbell"
+                    />
+                    <h1 class="purchaseItemName">Adjustable Dumbell</h1>
+                    <h2 class="purchaseItemPrice">
+                        <span>89,99</span>$ / 59,99$
+                    </h2>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="purchaseCard">
+                    <img src="./images/purchase4.jpg" alt="Kettlebell / 3 kg" />
+                    <h1 class="purchaseItemName">Kettlebell / 3 kg</h1>
+                    <h2 class="purchaseItemPrice">
+                        <span>89,99</span>$ / 59,99$
+                    </h2>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Purchase - End  -->
+
+        <!-- Review - Start  -->
+        <div class="reviewContainer">
+            <div class="container">
+                <h1>REVIEW CLIENT</h1>
+                <span class="line"></span>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Temporibus aperiam iusto provident delectus enim quod
+                    facilis dolorum illum, a ad.
+                </p>
+
+                <div class="reviews">
+                    <div class="review">
+                        <div class="user">
+                            <img src="./images/client1.jpg" alt="" />
+                            <div class="userInfo">
+                                <h1 class="userJob">Diet Expert</h1>
+                                <h2 class="userPosition">CFO</h2>
+                            </div>
+                        </div>
+                        <div class="userComment">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Labore harum illum quis vitae
+                                mollitia impedit. Neque suscipit nemo sint
+                                dolorum dolore, commodi at libero nisi eum. Quo
+                                et eum dignissimos.
+                            </p>
+                            <div class="commentBackground"></div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="user">
+                            <img src="./images/client2.jpg" alt="" />
+                            <div class="userInfo">
+                                <h1 class="userJob">Cardio Trainer</h1>
+                                <h2 class="userPosition">CEO</h2>
+                            </div>
+                        </div>
+                        <div class="userComment">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Labore harum illum quis vitae
+                                mollitia impedit. Neque suscipit nemo sint
+                                dolorum dolore, commodi at libero nisi eum. Quo
+                                et eum dignissimos.
+                            </p>
+                            <div class="commentBackground"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Review - Start  -->
+
+        <!-- Contact - Start  -->
+        <div id="contact" class="container">
+            <h1>CONTACT US</h1>
+            <span class="line"></span>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                dolores aliquam, accusantium atque fugiat minima.
+            </p>
+        </div>
+        <!-- Contact - End  -->
+
         <script src="./js/main.js"></script>
     </body>
 </html>

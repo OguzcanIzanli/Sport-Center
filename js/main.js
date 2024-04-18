@@ -60,24 +60,35 @@ function handleClick(e) {
 // CLASSES - END
 
 // BMI CALCULATOR - START
+const calculatorInputs = document.querySelectorAll("input");
+const calculatorCaret = document.querySelector(".calculatorCaret");
 const requiredMsg = document.querySelector(".required");
-let BMI;
+
+let caretLocation;
 let weight;
 let height;
 
-function calculator(e) {
-    e.target.id == "height"
-        ? (height = Number(e.target.value) / 100)
-        : (weight = Number(e.target.value));
+calculatorInputs.forEach((input) =>
+    input.addEventListener("input", (e) => {
+        e.target.id == "height"
+            ? (height = Number(e.target.value) / 100)
+            : (weight = Number(e.target.value));
 
-    requiredMsg.innerHTML = "";
+        requiredMsg.innerHTML = "";
 
-    height < 1.2 || height > 2.4
-        ? (requiredMsg.innerHTML =
-              "Your height should between 120 cm and 240 cm.")
-        : weight < 40 || weight > 240
-        ? (requiredMsg.innerHTML =
-              "Your weight should between 40 kg and 240 kg.")
-        : (BMI = weight / height ** 2);
-}
+        height < 1.2 || height > 2.4
+            ? (requiredMsg.innerHTML =
+                  "Your height should between 120 cm and 240 cm.")
+            : weight < 40 || weight > 240
+            ? (requiredMsg.innerHTML =
+                  "Your weight should between 40 kg and 240 kg.")
+            : (caretLocation = ((weight / height ** 2 - 18.5) * 80) / 16.5);
+
+        caretLocation < 6
+            ? (calculatorCaret.style.left = "6%")
+            : caretLocation > 86
+            ? (calculatorCaret.style.left = "86%")
+            : (calculatorCaret.style.left = `${caretLocation}%`);
+    })
+);
 // BMI CALCULATOR - END

@@ -12,13 +12,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 .calculatorInputs input{
-    width: 35%;
+    width: 70%;
     padding: 1px 3px;
+    margin: 8px 0;
 }
 
 .calculatorResult {
@@ -36,8 +37,17 @@
     font-size: 1rem;
 }
 
-.calculatorResult image {
+.calculatorResult .image {
     position: relative;
+}
+
+.calculatorCaret {
+    position: absolute;
+    font-size: 5vb;
+    color: var(--color-y);
+    bottom: -4vb;
+    left: 6%;
+    transition: all 2s linear;
 }
 
 .calculatorResult img {
@@ -47,4 +57,35 @@
 .calculatorResult p {
     font-size: var(--fs-1);
     padding: 15px 0;
+}
+
+@media (max-width: 576px) {
+    .bmiContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bmiContainer h1 {
+        font-size: var(--fs-3);
+    }
+
+    .bmiContainer p {
+        font-size: var(--fs-1)
+    }
+
+    .calculator, .calculatorResult {
+        width: 95%;
+    }
+
+    .calculatorInputs {
+        flex-direction: column;
+    }
+
+    .inputContainer {
+        width: 100%;
+    }
+
+    .calculatorInputs input {
+        width: 40%;
+    }
 }

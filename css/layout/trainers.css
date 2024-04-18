@@ -1,0 +1,88 @@
+.trainersContainer {
+    background-color: var(--color-lb);
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+
+.trainerCards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.trainerCard {
+    width: 25%;
+    position: relative;
+    z-index: 1;
+}
+
+.trainerCard img {
+    width: 100%;
+    border: 2px solid var(--color-y);
+    border-radius: 5px;
+}
+
+.cardClip {
+    position: absolute;
+    top: -3%;
+    left: -3%;
+    width: 106%;
+    height: 104%;
+    background-color: var(--color-b);
+    z-index: -1;
+    clip-path: polygon(0 35%, 35% 35%, 35% 0, 65% 0, 65% 35%, 100% 35%, 100% 65%, 65% 65%, 65% 100%, 35% 100%, 35% 65%, 0 65%);
+    transition: all 0.3s linear;
+}
+
+.trainerCard:hover .cardClip {
+    clip-path: polygon(0 35%, 35% 35%, 35% 0, 65% 0, 65% 35%, 100% 35%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0 85%);
+}
+
+.trainerName {
+    position: absolute;
+    background-color: var(--color-b);
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+    height: 0;
+    clip-path: polygon(0 30%, 20% 30%, 20% 20%, 80% 20%, 80% 30%, 100% 30%, 100% 70%, 80% 70%, 80% 80%, 20% 80%, 20% 70%, 0 70%);
+    transition: all 0.3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-w);
+}
+
+.trainerName h2 {
+    font-size: 1.1rem;
+}
+
+.trainerName h4 {
+    font-size: 0.8rem;
+}
+
+.trainerCard:hover .trainerName {
+    height: 40%;
+}
+
+@media (max-width: 576px) {
+    .trainerCards {
+        flex-direction: column;
+    }
+
+    .trainerCard {
+        width: 90%;
+        margin: 30px 0;
+    }
+
+    .trainersContainer h1 {
+        font-size: var(--fs-3);
+    }
+
+    .trainersContainer p {
+        font-size: var(--fs-1)
+    }
+}
