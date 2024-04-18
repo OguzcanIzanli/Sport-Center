@@ -82,13 +82,43 @@ calculatorInputs.forEach((input) =>
             : weight < 40 || weight > 240
             ? (requiredMsg.innerHTML =
                   "Your weight should between 40 kg and 240 kg.")
-            : (caretLocation = ((weight / height ** 2 - 18.5) * 80) / 16.5);
+            : (caretLocation = ((weight / height ** 2 - 18.5) * 81) / 16.5);
 
-        caretLocation < 6
-            ? (calculatorCaret.style.left = "6%")
-            : caretLocation > 86
-            ? (calculatorCaret.style.left = "86%")
+        caretLocation < 9
+            ? (calculatorCaret.style.left = "9%")
+            : caretLocation > 90
+            ? (calculatorCaret.style.left = "90%")
             : (calculatorCaret.style.left = `${caretLocation}%`);
     })
 );
 // BMI CALCULATOR - END
+
+// CONTACT - START
+// Initialize and add the map
+let map;
+
+async function initMap() {
+    // The location of İzmir
+    const position = { lat: 38.4, lng: 27.074 };
+    // Request needed libraries.
+    //@ts-ignore
+    const { Map } = await google.maps.importLibrary("maps");
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+    // The map, centered at İzmir
+    map = new Map(document.getElementById("map"), {
+        zoom: 15,
+        center: position,
+        mapId: "DEMO_MAP_ID",
+    });
+
+    // The marker, positioned at İzmir
+    const marker = new AdvancedMarkerElement({
+        map: map,
+        position: position,
+        title: "İzmir",
+    });
+}
+
+initMap();
+// CONTACT - END

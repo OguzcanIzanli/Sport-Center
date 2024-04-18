@@ -2,3 +2,60 @@
     text-align: center;
     padding: 40px 0 20px 0;
 }
+
+.contactContainer {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts {
+    display: flex;
+    gap: 30px;
+}
+
+.contacts h1 {
+    color: var(--color-g);
+    font-size: 1.2rem;
+    font-weight: var(--fw-600);
+    padding: 0;
+}
+
+.contacts p {
+    font-size: 0.8rem;
+    font-weight: var(--fw-700);
+}
+
+.appoinment {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: left;
+}
+
+.appoinment .inputs {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.appoinment input {
+    margin-bottom: 30px;
+    background-color: var(--color-lb);
+    border: none;
+    padding: 7px 12px;
+}
+
+.appoinment textarea {
+    background-color: var(--color-lb);
+    padding: 7px 12px;
+    border: none;
+}
+
+.googleMap {
+    width: 50%;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+  }

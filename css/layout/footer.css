@@ -1,0 +1,28 @@
+.footerContainer {
+    background-color: var(--color-b);
+}
+
+.footerContainer p {
+    color: var(--color-w);
+    font-weight: 500;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerLinks h1 {
+    color: var(--color-w);
+    font-size: var(--fs-1);
+    font-weight: var(--fw-600);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
+    margin-bottom: 18px;
+}

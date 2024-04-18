@@ -43,10 +43,11 @@
 
 .calculatorCaret {
     position: absolute;
-    font-size: 5vb;
+    font-size: 4.5vb;
     color: var(--color-y);
-    bottom: -4vb;
-    left: 6%;
+    bottom: 2.8vb;
+    transform: translate(-50%,100%);
+    left: 9%;
     transition: all 2s linear;
 }
 

@@ -6,6 +6,7 @@
 @import "./layout/purchase.css";
 @import "./layout/review.css";
 @import "./layout/contact.css";
+@import "./layout/footer.css";
 
 * {
     padding: 0;
