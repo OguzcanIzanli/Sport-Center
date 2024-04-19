@@ -104,7 +104,7 @@ let map;
 
 async function initMap() {
     // The location of İzmir
-    const position = { lat: 38.4, lng: 27.074 };
+    const position = { lat: 38.4, lng: 27.0 };
     // Request needed libraries.
     //@ts-ignore
     const { Map } = await google.maps.importLibrary("maps");

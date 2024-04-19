@@ -297,7 +297,6 @@
                         <span>89,99</span>$ / 59,99$
                     </h4>
                     <div class="cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
                         <a href="">Add to Cart</a>
                     </div>
                 </div>
@@ -308,7 +307,6 @@
                         <span>899,99</span>$ / 599,99$
                     </h4>
                     <div class="cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
                         <a href="">Add to Cart</a>
                     </div>
                 </div>
@@ -322,7 +320,6 @@
                         <span>89,99</span>$ / 59,99$
                     </h4>
                     <div class="cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
                         <a href="">Add to Cart</a>
                     </div>
                 </div>
@@ -333,7 +330,6 @@
                         <span>89,99</span>$ / 59,99$
                     </h4>
                     <div class="cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
                         <a href="">Add to Cart</a>
                     </div>
                 </div>
@@ -342,7 +338,7 @@
         <!-- Purchase - End  -->
 
         <!-- Review - Start  -->
-        <div class="reviewContainer">
+        <div id="review">
             <div class="container">
                 <div class="sectionHeader">
                     <h3>REVIEW CLIENT</h3>
@@ -352,13 +348,14 @@
                         facilis dolorum illum, a ad.
                     </p>
                 </div>
+
                 <div class="reviews">
                     <div class="review">
-                        <div class="user">
+                        <div class="userProfile">
                             <img src="./images/client1.jpg" alt="" />
                             <div class="userInfo">
-                                <h1 class="userJob">Diet Expert</h1>
-                                <h2 class="userPosition">CFO</h2>
+                                <p class="userJob">Diet Expert</p>
+                                <p class="userPosition">CFO</p>
                             </div>
                         </div>
                         <div class="userComment">
@@ -373,11 +370,11 @@
                         </div>
                     </div>
                     <div class="review">
-                        <div class="user">
+                        <div class="userProfile">
                             <img src="./images/client2.jpg" alt="" />
                             <div class="userInfo">
-                                <h1 class="userJob">Cardio Trainer</h1>
-                                <h2 class="userPosition">CEO</h2>
+                                <p class="userJob">Cardio Trainer</p>
+                                <p class="userPosition">CEO</p>
                             </div>
                         </div>
                         <div class="userComment">
@@ -405,19 +402,23 @@
                     Iure dolores aliquam, accusantium atque fugiat minima.
                 </p>
             </div>
+
             <div class="contactContainer">
                 <div class="appoinment">
                     <div class="contacts">
-                        <div class="contactNumber">
-                            <h1>Mobile Number</h1>
+                        <div class="contact">
+                            <p>Mobile Number</p>
                             <p>+135 773 321 4442</p>
                         </div>
-                        <div class="contactEmail">
-                            <h1>Email Address</h1>
+
+                        <div class="contact">
+                            <p>Email Address</p>
                             <p>demo@demo.com</p>
                         </div>
                     </div>
-                    <p class="inputs">Make An Appoinment</p>
+
+                    <h4>Make An Appoinment</h4>
+
                     <input type="text" placeholder="Your Name" />
                     <input type="email" placeholder="Your Email" />
                     <textarea
@@ -428,11 +429,11 @@
                         placeholder="Your Message"
                     ></textarea>
                 </div>
+
                 <div class="googleMap">
                     <div id="map"></div>
                     <script
                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6_ZW-ageJq1wnZiiFoJeQZGKhNs7TMJA&callback=initMap&v=weekly&solution_channel=GMP_CCS_customcontrols_v1"
-                        type="module"
                         defer
                     ></script>
                 </div>
@@ -441,7 +442,7 @@
         <!-- Contact - End  -->
 
         <!-- Footer - Start -->
-        <div class="footerContainer">
+        <div id="footer">
             <div class="container">
                 <img src="./images/logo.png" alt="Logo" />
                 <p>
@@ -452,14 +453,14 @@
                 </p>
                 <div class="footerLinks">
                     <div class="links">
-                        <h1>Information</h1>
+                        <h4>Information</h4>
                         <a href="">About Us</a>
                         <a href="">Classes</a>
                         <a href="">Blog</a>
                         <a href="">Contact</a>
                     </div>
                     <div class="links">
-                        <h1>Helpful Links</h1>
+                        <h4>Helpful Links</h4>
                         <a href="">Services</a>
                         <a href="">Supports</a>
                         <a href="">Terms & Condition</a>
