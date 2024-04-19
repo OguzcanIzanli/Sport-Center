@@ -127,3 +127,16 @@ async function initMap() {
 
 initMap();
 // CONTACT - END
+
+// Smooth page transition
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        let sectionId = e.target.getAttribute("href");
+
+        document.querySelector(`${sectionId}`).scrollIntoView({
+            behavior: "smooth",
+        });
+    });
+});
