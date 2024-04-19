@@ -80,10 +80,10 @@
     }
 
     .reviewContainer h1 {
-        font-size: var(--fs-1);
+        font-size: var(--fs-1-6);
     }
 
     .reviewContainer p {
-        font-size: var(--fs-1)
+        font-size: var(--fs-1-6)
     }
 }

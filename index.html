@@ -30,11 +30,11 @@
                     <img src="./images/logo.png" alt="Logo" />
 
                     <div class="navbarBtns">
-                        <a href="">Home</a>
-                        <a href="">Classes</a>
-                        <a href="">Trainer</a>
-                        <a href="">Review</a>
-                        <a href="">Contact</a>
+                        <a href="#hero">Home</a>
+                        <a href="#classes">Classes</a>
+                        <a href="#trainers">Trainer</a>
+                        <a href="#review">Review</a>
+                        <a href="#contact">Contact</a>
                         <a href="">JOIN US</a>
                     </div>
                     <div class="navbarDropdownBtn">
@@ -46,7 +46,7 @@
         <!-- Navbar - End -->
 
         <!-- Hero - Start -->
-        <div class="heroImage">
+        <div id="hero" class="heroBackgroundImage">
             <div class="container">
                 <div class="hero">
                     <h1>POWERFULL</h1>
@@ -65,7 +65,7 @@
                 </div>
             </div>
 
-            <div class="heroStatistics">
+            <div class="heroStatisticsBackground">
                 <div class="statisticsContainer">
                     <div class="statistic">
                         <span class="number">325</span>
@@ -90,14 +90,16 @@
 
         <!-- Classes - Start -->
         <div id="classes">
-            <div class="classesImage"></div>
+            <div class="classesBackgroundClip"></div>
             <div class="container">
-                <h1>OUR CLASSES</h1>
-                <span class="line"></span>
-                <p class="ourClassesP">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. At
-                    harum minus rem doloremque tempore delectus.
-                </p>
+                <div class="sectionHeader">
+                    <h3>OUR CLASSES</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. At harum minus rem doloremque tempore delectus.
+                    </p>
+                </div>
+
                 <div class="classesBtns">
                     <a name="yoga" class="classesBtn selected" href=""
                         >Yoga
@@ -114,7 +116,7 @@
                 <!-- Yoga -->
                 <div id="yoga" class="classes d-flex">
                     <div class="information">
-                        <h2>Why are your Yoga?</h2>
+                        <h4>Why are your Yoga?</h4>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Pariatur incidunt eaque velit, adipisci
@@ -123,7 +125,7 @@
                             ad aut labore quae quaerat! Maiores atque totam modi
                             ea repellat alias nemo vel!
                         </p>
-                        <h2>When comes Yoga Your Time?</h2>
+                        <h4>When comes Yoga Your Time?</h4>
                         <p>Saturday - Sunday: 8:00am - 10:00am</p>
                         <p>Monday - Tuesday: 10:00am - 12:00am</p>
                         <p>Wednesday - Friday: 3:00am - 6:00am</p>
@@ -133,7 +135,7 @@
                 <!-- Group -->
                 <div id="group" class="classes">
                     <div class="information">
-                        <h2>Why are your Group?</h2>
+                        <h4>Why are your Group?</h4>
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing
                             elit. Facilis esse mollitia modi incidunt dolores
@@ -142,7 +144,7 @@
                             adipisci voluptatibus repellat labore, minus tempora
                             at, explicabo animi?
                         </p>
-                        <h2>When comes Group Your Time?</h2>
+                        <h4>When comes Group Your Time?</h4>
                         <p>Saturday - Sunday: 10:00am - 12:00am</p>
                         <p>Monday - Tuesday: 12:00am - 14:00am</p>
                         <p>Wednesday - Friday: 6:00am - 9:00am</p>
@@ -152,14 +154,14 @@
                 <!-- Solo -->
                 <div id="solo" class="classes">
                     <div class="information">
-                        <h2>Why are your Solo?</h2>
+                        <h4>Why are your Solo?</h4>
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing
                             elit. Doloribus nihil velit rerum dolores nemo,
                             quisquam architecto minus, veritatis quo nisi
                             reiciendis sed dignissimos facilis ad.
                         </p>
-                        <h2>When comes Solo Your Time?</h2>
+                        <h4>When comes Solo Your Time?</h4>
                         <p>7/24</p>
                     </div>
                     <img src="./images/solo.jpg" alt="solo" />
@@ -167,12 +169,12 @@
                 <!-- Stretching -->
                 <div id="stretching" class="classes">
                     <div class="information">
-                        <h2>Why are your Stretching?</h2>
+                        <h4>Why are your Stretching?</h4>
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing
                             elit. Illo, quas!
                         </p>
-                        <h2>When comes Stretching Your Time?</h2>
+                        <h4>When comes Stretching Your Time?</h4>
                         <p>Saturday - Sunday: 8:00am - 10:00am</p>
                         <p>Monday - Tuesday: 10:00am - 12:00am</p>
                         <p>Wednesday - Friday: 3:00am - 6:00am</p>
@@ -184,68 +186,68 @@
         <!-- Classes - End -->
 
         <!-- BMI Calculator - Start  -->
-        <div class="container">
-            <div class="bmiContainer">
-                <div class="calculator">
-                    <h1>BMI Calculator</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Eos dolores ex et sequi porro facere, enim dolorum
-                        dolore, iure libero in voluptate itaque? Dignissimos
-                        sunt deleniti eligendi at similique totam.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptates officia cumque neque magnam ipsam voluptas
-                        qui, voluptate eveniet quae, veniam corrupti maiores
-                        itaque sint. Earum, dolor iure! Delectus, libero. Non.
-                    </p>
-                    <div class="calculatorInputs">
-                        <div class="inputContainer">
-                            <input
-                                type="number"
-                                name=""
-                                id="height"
-                                placeholder="Your Height"
-                            />
-                            <label for="height">cm</label>
-                        </div>
+        <div id="calculator" class="container">
+            <div class="calculator">
+                <h3>BMI Calculator</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                    dolores ex et sequi porro facere, enim dolorum dolore, iure
+                    libero in voluptate itaque? Dignissimos sunt deleniti
+                    eligendi at similique totam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates officia cumque neque magnam ipsam voluptas qui,
+                    voluptate eveniet quae, veniam corrupti maiores itaque sint.
+                    Earum, dolor iure! Delectus, libero. Non.
+                </p>
 
-                        <div class="inputContainer">
-                            <input
-                                type="number"
-                                name=""
-                                id="weight"
-                                placeholder="Your Weight"
-                            />
-                            <label for="weight">kg</label>
-                        </div>
+                <div class="inputsContainer">
+                    <div class="inputContainer">
+                        <input
+                            type="number"
+                            name=""
+                            id="height"
+                            placeholder="Your Height"
+                        />
+                        <label for="height">cm</label>
                     </div>
-                    <span class="required"></span>
+
+                    <div class="inputContainer">
+                        <input
+                            type="number"
+                            name=""
+                            id="weight"
+                            placeholder="Your Weight"
+                        />
+                        <label for="weight">kg</label>
+                    </div>
                 </div>
-                <div class="calculatorResult">
-                    <p>Your BMI</p>
-                    <div class="image">
-                        <img src="./images/bmi-index.jpg" alt="BMI Index" />
-                        <span class="calculatorCaret">
-                            <i class="fa-solid fa-caret-up"></i>
-                        </span>
-                    </div>
+                <span class="required"></span>
+            </div>
+            <div class="calculatorResult">
+                <p>Your BMI <span class="bmiResult"></span></p>
+                <div class="image">
+                    <img src="./images/bmi-index.jpg" alt="BMI Index" />
+                    <span class="calculatorCaret">
+                        <i class="fa-solid fa-caret-up"></i>
+                    </span>
                 </div>
             </div>
         </div>
         <!-- BMI Calculator - End  -->
 
         <!-- Trainers - Start  -->
-        <div class="trainersContainer">
+        <div id="trainers">
             <div class="container">
-                <h1>OUR BEST TRAINERS</h1>
-                <span class="line"></span>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Suscipit ex corporis tempore consectetur provident earum
-                    voluptatibus vero ullam. Ut, sit!
-                </p>
+                <div class="sectionHeader">
+                    <h3>OUR BEST TRAINERS</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Suscipit ex corporis tempore consectetur provident
+                        earum voluptatibus vero ullam. Ut, sit!
+                    </p>
+                </div>
 
                 <div class="trainerCards">
                     <div class="trainerCard">
@@ -253,7 +255,7 @@
                         <div class="cardClip"></div>
                         <div class="trainerName">
                             <h2>Jane Doe</h2>
-                            <h4>Cardio Trainer</h4>
+                            <p>Cardio Trainer</p>
                         </div>
                     </div>
                     <div class="trainerCard">
@@ -261,7 +263,7 @@
                         <div class="cardClip"></div>
                         <div class="trainerName">
                             <h2>Jane Doe</h2>
-                            <h4>Cardio Trainer</h4>
+                            <p>Cardio Trainer</p>
                         </div>
                     </div>
                     <div class="trainerCard">
@@ -269,7 +271,7 @@
                         <div class="cardClip"></div>
                         <div class="trainerName">
                             <h2>Jane Doe</h2>
-                            <h4>Cardio Trainer</h4>
+                            <p>Cardio Trainer</p>
                         </div>
                     </div>
                 </div>
@@ -279,19 +281,21 @@
 
         <!-- Purchase - Start  -->
         <div id="purchase" class="container">
-            <h1>PURCHASE FROM US</h1>
-            <span class="line"></span>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Doloribus, magni fugiat ex suscipit necessitatibus sint.
-            </p>
+            <div class="sectionHeader">
+                <h3>PURCHASE FROM US</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Doloribus, magni fugiat ex suscipit necessitatibus sint.
+                </p>
+            </div>
+
             <div class="purchaseContainer">
                 <div class="purchaseCard">
                     <img src="./images/purchase1.jpg" alt="Kettlebell / 5 kg" />
-                    <h1 class="purchaseItemName">Kettlebell / 5 kg</h1>
-                    <h2 class="purchaseItemPrice">
+                    <h4 class="purchaseItemName">Kettlebell / 5 kg</h4>
+                    <h4 class="purchaseItemPrice">
                         <span>89,99</span>$ / 59,99$
-                    </h2>
+                    </h4>
                     <div class="cart">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <a href="">Add to Cart</a>
@@ -299,10 +303,10 @@
                 </div>
                 <div class="purchaseCard">
                     <img src="./images/purchase2.jpg" alt="Treadmill" />
-                    <h1 class="purchaseItemName">Treadmill</h1>
-                    <h2 class="purchaseItemPrice">
+                    <h4 class="purchaseItemName">Treadmill</h4>
+                    <h4 class="purchaseItemPrice">
                         <span>899,99</span>$ / 599,99$
-                    </h2>
+                    </h4>
                     <div class="cart">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <a href="">Add to Cart</a>
@@ -313,10 +317,10 @@
                         src="./images/purchase3.jpg"
                         alt="Adjustable Dumbell"
                     />
-                    <h1 class="purchaseItemName">Adjustable Dumbell</h1>
-                    <h2 class="purchaseItemPrice">
+                    <h4 class="purchaseItemName">Adjustable Dumbell</h4>
+                    <h4 class="purchaseItemPrice">
                         <span>89,99</span>$ / 59,99$
-                    </h2>
+                    </h4>
                     <div class="cart">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <a href="">Add to Cart</a>
@@ -324,10 +328,10 @@
                 </div>
                 <div class="purchaseCard">
                     <img src="./images/purchase4.jpg" alt="Kettlebell / 3 kg" />
-                    <h1 class="purchaseItemName">Kettlebell / 3 kg</h1>
-                    <h2 class="purchaseItemPrice">
+                    <h4 class="purchaseItemName">Kettlebell / 3 kg</h4>
+                    <h4 class="purchaseItemPrice">
                         <span>89,99</span>$ / 59,99$
-                    </h2>
+                    </h4>
                     <div class="cart">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <a href="">Add to Cart</a>
@@ -340,14 +344,14 @@
         <!-- Review - Start  -->
         <div class="reviewContainer">
             <div class="container">
-                <h1>REVIEW CLIENT</h1>
-                <span class="line"></span>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Temporibus aperiam iusto provident delectus enim quod
-                    facilis dolorum illum, a ad.
-                </p>
-
+                <div class="sectionHeader">
+                    <h3>REVIEW CLIENT</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Temporibus aperiam iusto provident delectus enim quod
+                        facilis dolorum illum, a ad.
+                    </p>
+                </div>
                 <div class="reviews">
                     <div class="review">
                         <div class="user">
@@ -394,13 +398,13 @@
 
         <!-- Contact - Start  -->
         <div id="contact" class="container">
-            <h1>CONTACT US</h1>
-            <span class="line"></span>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-                dolores aliquam, accusantium atque fugiat minima.
-            </p>
-
+            <div class="sectionHeader">
+                <h3>CONTACT US</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iure dolores aliquam, accusantium atque fugiat minima.
+                </p>
+            </div>
             <div class="contactContainer">
                 <div class="appoinment">
                     <div class="contacts">

@@ -5,19 +5,19 @@ header {
     height: auto;
     transition: all 0.3s linear;
     z-index: 2;
-
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 87px;
+    position: relative;
+    height: 60px;
 }
 
 /* Navbar Buttons  */
 .navbarBtns a {
-    font-size: var(--fs-0);
+    font-size: var(--fs-1-3);
     font-weight: var(--fw-700);
 }
 
@@ -43,7 +43,7 @@ header {
 
 /* Dropdown Button */
 .navbarDropdownBtn {
-    font-size: var(--fs-4);
+    font-size: var(--fs-3);
     display: none;
 }
 
@@ -54,9 +54,9 @@ header {
         display: flex;
         flex-direction: column;
         width: auto;
-        top: 89px;
+        top: 62px;
         right: 10px;
-        background-color: rgba(0,0,0,0.8);
+        background-color: var(--color-b);
         transition: all 0.3s linear;
         height: 0;
         overflow: hidden;
@@ -64,20 +64,14 @@ header {
     }
 
     .navbarOpen {
-        height: 285px; /* Dropdown Menu Height */
+        height: 280px; /* Dropdown Menu Height */
     }
 
     .navbarBtns a {
-        margin: 0.4rem 1.4rem;
+        margin: 6px 18px;
     }
 
     .navbarDropdownBtn {
         display: block;
-    }
-}
-
-@media (max-width: 576px) {
-    .navbar {
-        width: 95%;
     }
 }

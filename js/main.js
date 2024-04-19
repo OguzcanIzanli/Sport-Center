@@ -63,6 +63,7 @@ function handleClick(e) {
 const calculatorInputs = document.querySelectorAll("input");
 const calculatorCaret = document.querySelector(".calculatorCaret");
 const requiredMsg = document.querySelector(".required");
+const bmiResult = document.querySelector(".bmiResult");
 
 let caretLocation;
 let weight;
@@ -82,12 +83,16 @@ calculatorInputs.forEach((input) =>
             : weight < 40 || weight > 240
             ? (requiredMsg.innerHTML =
                   "Your weight should between 40 kg and 240 kg.")
-            : (caretLocation = ((weight / height ** 2 - 18.5) * 81) / 16.5);
+            : (caretLocation = (weight / height ** 2 - 13) * (80 / 27.5) + 9) &&
+              (bmiResult.innerHTML = ` : ${(weight / height ** 2)
+                  .toString()
+                  .slice(0, 4)} kg/m<sup>2</sup>`);
 
+        console.log(caretLocation);
         caretLocation < 9
             ? (calculatorCaret.style.left = "9%")
-            : caretLocation > 90
-            ? (calculatorCaret.style.left = "90%")
+            : caretLocation > 89
+            ? (calculatorCaret.style.left = "89%")
             : (calculatorCaret.style.left = `${caretLocation}%`);
     })
 );
