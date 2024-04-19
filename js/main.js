@@ -14,6 +14,20 @@ navbarDropdownBtn.addEventListener("click", () => {
         : "fa-solid fa-bars";
 });
 
+// Smooth transition between sections on the page
+document.querySelectorAll('a[href^="#"]').forEach((navBtn) => {
+    navBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        let sectionId = e.target.getAttribute("href");
+
+        navbarButtons.classList.remove("navbarOpen");
+
+        document.querySelector(`${sectionId}`).scrollIntoView({
+            behavior: "smooth",
+        });
+    });
+});
+
 // Navbar Page Scroll Event
 document.addEventListener("scroll", () => {
     window.scrollY > 100
@@ -127,16 +141,3 @@ async function initMap() {
 
 initMap();
 // CONTACT - END
-
-// Smooth page transition
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-
-        let sectionId = e.target.getAttribute("href");
-
-        document.querySelector(`${sectionId}`).scrollIntoView({
-            behavior: "smooth",
-        });
-    });
-});
