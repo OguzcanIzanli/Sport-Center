@@ -45,6 +45,7 @@ header {
 .navbarDropdownBtn {
     font-size: var(--fs-3);
     display: none;
+    cursor: pointer;
 }
 
 @media (max-width: 1460px) {
@@ -72,6 +73,6 @@ header {
     }
 
     .navbarDropdownBtn {
-        display: block;
+        display: inline-block;
     }
 }

@@ -21,6 +21,7 @@ document.querySelectorAll('a[href^="#"]').forEach((navBtn) => {
         let sectionId = e.target.getAttribute("href");
 
         navbarButtons.classList.remove("navbarOpen");
+        navbarDropdownBtnIcon.classList = "fa-solid fa-bars";
 
         document.querySelector(`${sectionId}`).scrollIntoView({
             behavior: "smooth",
