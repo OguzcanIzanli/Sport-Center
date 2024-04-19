@@ -8,11 +8,13 @@
     width: 45%;
 }
 
-.calculator h3 {
+.calculator h4 {
     color: var(--color-b);
     font-size: var(--fs-2);
     font-weight: var(--fw-800);
+    margin: 0;
 }
+
 
 .inputsContainer {
     display: flex;
