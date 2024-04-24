@@ -18,7 +18,7 @@ navbarDropdownBtn.addEventListener("click", () => {
 document.querySelectorAll('a[href^="#"]').forEach((navBtn) => {
     navBtn.addEventListener("click", function (e) {
         e.preventDefault();
-        let sectionId = e.target.getAttribute("href");
+        let sectionId = this.getAttribute("href");
 
         navbarButtons.classList.remove("navbarOpen");
         navbarDropdownBtnIcon.classList = "fa-solid fa-bars";
