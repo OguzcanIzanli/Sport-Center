@@ -34,7 +34,19 @@ document.addEventListener("scroll", () => {
     window.scrollY > 100
         ? (header.style.backgroundColor = "#355592")
         : (header.style.backgroundColor = "");
+
+    navbarButtons.classList.remove("navbarOpen"); // Close the navbar when scrolling
+    navbarDropdownBtnIcon.classList = "fa-solid fa-bars";
 });
+
+// Close the dropdown menu when click the document except navbar
+document.addEventListener("click", (e) => {
+    if (e.clientY > 60) {
+        navbarButtons.classList.remove("navbarOpen");
+        navbarDropdownBtnIcon.classList = "fa-solid fa-bars";
+    }
+});
+
 // NAVBAR - END
 
 // CLASSES - START
@@ -112,33 +124,3 @@ calculatorInputs.forEach((input) =>
     })
 );
 // BMI CALCULATOR - END
-
-// CONTACT - START
-// Initialize and add the map
-let map;
-
-async function initMap() {
-    // The location of İzmir
-    const position = { lat: 38.4, lng: 27.0 };
-    // Request needed libraries.
-    //@ts-ignore
-    const { Map } = await google.maps.importLibrary("maps");
-    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
-
-    // The map, centered at İzmir
-    map = new Map(document.getElementById("map"), {
-        zoom: 15,
-        center: position,
-        mapId: "DEMO_MAP_ID",
-    });
-
-    // The marker, positioned at İzmir
-    const marker = new AdvancedMarkerElement({
-        map: map,
-        position: position,
-        title: "İzmir",
-    });
-}
-
-initMap();
-// CONTACT - END
