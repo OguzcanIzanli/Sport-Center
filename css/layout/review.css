@@ -65,7 +65,7 @@
     z-index: -1;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .reviews {
         flex-direction: column;
     }
@@ -79,7 +79,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .reviews {
         flex-direction: column;
     }

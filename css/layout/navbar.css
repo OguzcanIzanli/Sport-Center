@@ -48,7 +48,7 @@ header {
     cursor: pointer;
 }
 
-@media (max-width: 1460px) {
+@media (max-width: 1400px) {
     /* Navbar Buttons */
     .navbarBtns {
         position: absolute;

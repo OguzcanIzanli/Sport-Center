@@ -53,7 +53,7 @@
     height: 350px;
 }
 
-  @media (max-width: 576px) {
+@media (max-width: 768px) {
     .contactContainer {
         flex-direction: column;
     }
@@ -68,7 +68,7 @@
     }
 }
 
-@media (max-width: 768px) {
+  @media (max-width: 576px) {
     .contactContainer {
         flex-direction: column;
     }
