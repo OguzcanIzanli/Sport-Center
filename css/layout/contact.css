@@ -40,12 +40,14 @@
     background-color: var(--color-lb);
     border: none;
     padding: 7px 12px;
+    color: var(--color-g);
 }
 
 .appoinment textarea {
     background-color: var(--color-lb);
     padding: 7px 12px;
     border: none;
+    color: var(--color-g);
 }
 
 .googleMap {
