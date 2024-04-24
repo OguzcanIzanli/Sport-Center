@@ -67,3 +67,18 @@
         width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    .contactContainer {
+        flex-direction: column;
+    }
+
+    .appoinment {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .googleMap {
+        width: 100%;
+    }
+}

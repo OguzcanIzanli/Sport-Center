@@ -77,5 +77,18 @@
     .review:not(:last-child) {
         margin-bottom: 70px;
     }
+}
 
+@media (max-width: 768px) {
+    .reviews {
+        flex-direction: column;
+    }
+
+    .review {
+        width: 80%;
+    }
+
+    .review:not(:last-child) {
+        margin-bottom: 70px;
+    }
 }

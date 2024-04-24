@@ -138,3 +138,15 @@
         font-size: var(--fs-2);
     }
 }
+
+@media (max-width: 768px) { 
+     .statisticsContainer {
+        width: 80%;
+        flex-wrap: wrap;
+    }
+
+    .statistic {
+        width: 45%;
+        font-size: var(--fs-2);
+    }
+}

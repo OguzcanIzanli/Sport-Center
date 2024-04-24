@@ -103,3 +103,21 @@ sup {
         width: 45%;
     }
 }
+
+@media (max-width: 768px) {
+    #calculator {
+        flex-direction: column;
+    }
+
+    .calculator, .calculatorResult {
+        width: 100%;
+    }
+
+    .inputContainer {
+        width: 100%;
+    }
+
+    .inputsContainer input {
+        width: 70%;
+    }
+}
