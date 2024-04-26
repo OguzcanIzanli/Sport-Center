@@ -55,12 +55,12 @@
 }
 
 .trainerName h2 {
-    font-size: var(--fs-1-3);
+    font-size: 2dvw;
     font-weight: var(--fw-600);
 }
 
 .trainerName p {
-    font-size: var(--fs-0-9);
+    font-size: 1dvw;
     color: var(--color-w);
     padding: 0;
 }
@@ -80,6 +80,14 @@
         width: 45%;
         margin-bottom: 30px;
     }
+
+    .trainerName h2 {
+        font-size: 4dvw;
+    }
+
+    .trainerName p {
+        font-size: 2dvw;
+    }
 }
 
 @media (max-width: 576px) {
@@ -93,10 +101,10 @@
     }
 
     .trainerName h2 {
-        font-size: var(--fs-2);
+        font-size: 8dvw;
     }
 
     .trainerName p {
-        font-size: var(--fs-1-3);
+        font-size: 4dvw;
     }
 }
