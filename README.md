@@ -28,6 +28,8 @@ Sport Center is a responsive web page created with JavaScript, designed to fit t
 
 You can access the live website [here](https://powerfullsportcenter.netlify.app/).
 
+https://github.com/OguzcanIzanli/Sport-Center/assets/95178772/b905e83e-da9f-468f-a2d8-d7720b4f0fc1
+
 ## How To Use
 
 To clone and run this application, you'll need [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en) installed on your computer.
